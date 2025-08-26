@@ -1,0 +1,24 @@
+{
+  "name": "vozia-dental-ai",
+  "version": "1.0.0",
+  "description": "Agente de IA para responder llamadas de clínica dental",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "build": "echo 'No build needed'"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "twilio": "^4.20.1",
+    "openai": "^4.24.1",
+    "dotenv": "^16.3.1",
+    "body-parser": "^1.20.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
