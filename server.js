@@ -140,6 +140,15 @@ app.get('/', (req, res) => {
   `);
 });
 
+app.get('/voice', (req, res) => {
+  res.send(`
+    <h2>🎤 Endpoint de Voz</h2>
+    <p>Este endpoint recibe llamadas de Twilio via POST</p>
+    <p><strong>Estado:</strong> ✅ Listo para recibir llamadas</p>
+    <p><strong>Método:</strong> POST (Twilio)</p>
+  `);
+});
+
 app.listen(PORT, () => {
   console.log(`🚀 Servidor corriendo en puerto ${PORT}`);
   console.log(`📞 Número Twilio: ${process.env.TWILIO_PHONE_NUMBER}`);
